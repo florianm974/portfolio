@@ -2,8 +2,8 @@
 
 ```
 ╔══════════════════════════════════════════╗
-║        FLORIAN · AI ENGINEERING          ║
-║          Île de La Réunion 🌋            ║
+║       FLORIAN MARIANNE · AI ENGINEERING  ║
+║           Île de La Réunion 🌋           ║
 ╚══════════════════════════════════════════╝
 ```
 
@@ -12,7 +12,7 @@
 _Passionné par l'IA, l'automatisation et les outils privacy-first_
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-06050c?style=for-the-badge&logo=firefox&logoColor=c9a96e)](https://florianm974.github.io)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-06050c?style=for-the-badge&logo=linkedin&logoColor=c9a96e)](https://linkedin.com/in/florianm974)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-06050c?style=for-the-badge&logo=linkedin&logoColor=c9a96e)](https://linkedin.com/in/florian-marianne)
 [![Links](https://img.shields.io/badge/Links-06050c?style=for-the-badge&logo=linktree&logoColor=c9a96e)](https://florian-links.netlify.app)
 
 </div>
@@ -49,12 +49,12 @@ _Passionné par l'IA, l'automatisation et les outils privacy-first_
 
 ### 🌸 Projets
 
-| Projet                                                            | Description                            | Stack                        |
-| :---------------------------------------------------------------- | :------------------------------------- | :--------------------------- |
-| [**PrixRéunion**](https://github.com/florianm974/prixreunion)     | Comparateur de prix pour La Réunion 🏝️ | FastAPI · React · PostgreSQL |
-| [**KSOS**](https://github.com/florianm974/ksos)                   | Portail développeur collectif          | React · Vite                 |
-| [**Prompt Forge**](https://github.com/florianm974/prompt-forge)   | Builder de prompts IA                  | JavaScript                   |
-| [**florian-links**](https://github.com/florianm974/florian-links) | Linktree personnel dark floral-gothic  | HTML · CSS                   |
+| Projet                                                            | Description                                                  | Stack                        |
+| :---------------------------------------------------------------- | :----------------------------------------------------------- | :--------------------------- |
+| [**PrixRéunion**](https://github.com/florianm974/prixreunion)     | Comparateur de prix pour La Réunion 🏝️                       | FastAPI · React · PostgreSQL |
+| [**KSOS**](https://github.com/florianm974/KSOS)                   | Portail collectif — 4 devs, tous les projets au même endroit | React · Vite                 |
+| [**Prompt Forge**](https://github.com/florianm974/prompt-forge)   | Builder de prompts IA — chatbot & génération d'images        | HTML · CSS · JS              |
+| [**florian-links**](https://github.com/florianm974/florian-links) | Linktree personnel dark floral-gothic                        | HTML · CSS                   |
 
 ---
 
