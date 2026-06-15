@@ -1,0 +1,32 @@
+name: Compile CV
+
+on:
+  push:
+    paths:
+      - "cv/**.tex" # se déclenche UNIQUEMENT si tu touches le .tex
+  workflow_dispatch: # bouton manuel dans l'onglet Actions si besoin
+
+permissions:
+  contents: write # pour committer le PDF généré
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compiler le LaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: cv/cv-florian.tex
+          latexmk_use_xelatex: false # pdflatex (moderncv compatible)
+          extra_system_packages: "texlive-fonts-extra"
+
+      - name: Déplacer le PDF à la racine
+        run: mv cv/cv-florian.pdf cv-florian.pdf
+
+      - name: Committer le PDF mis à jour
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update CV PDF [auto]"
+          file_pattern: cv-florian.pdf
