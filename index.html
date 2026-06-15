@@ -5,27 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Florian — AI Engineer · La Réunion</title>
     <meta name="theme-color" content="#06050c" />
-    <meta
-      name="description"
-      content="Étudiant L2 Informatique à l'Université de La Réunion, spécialisé en IA et développement full-stack. Découvrez mes projets et contactez-moi pour un stage en IA."
-    />
+    <meta name="description" content="Étudiant L3 Informatique à l'Université de La Réunion, spécialisé en IA et développement full-stack. Découvrez mes projets et contactez-moi." />
     <meta property="og:title" content="Florian — AI Engineer · La Réunion" />
-    <meta
-      property="og:description"
-      content="Étudiant L2 en IA & dev full-stack. Projets : PrixRéunion, KSOS, Prompt Forge."
-    />
+    <meta property="og:description" content="Étudiant L3 en IA & dev full-stack. Projets : KSOS, Prompt Forge, Agent de veille IA." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://florianm974.github.io" />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%2306050c'/><text y='.88em' x='0.06em' font-size='78' font-family='serif' fill='%23c9a96e'>F</text></svg>"
-    />
+    <meta property="og:url" content="https://florianm974.github.io/portfolio/" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%2306050c'/><text y='.88em' x='0.06em' font-size='78' font-family='serif' fill='%23c9a96e'>F</text></svg>" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
     <style>
       *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -105,13 +93,11 @@
       }
       .nav-links a:hover, .nav-links a.active { color: var(--gold); }
 
-      /* Burger */
       .nav-burger {
         display: none;
         flex-direction: column;
         justify-content: space-between;
-        width: 24px;
-        height: 16px;
+        width: 24px; height: 16px;
         background: transparent;
         border: none;
         cursor: pointer;
@@ -128,7 +114,6 @@
       .nav-burger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
       .nav-burger.open span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
 
-      /* Mobile overlay */
       .nav-mobile {
         display: none;
         position: fixed;
@@ -218,8 +203,7 @@
       }
       .hero-line::before, .hero-line::after {
         content: "";
-        width: 72px;
-        height: 1px;
+        width: 72px; height: 1px;
         background: linear-gradient(to right, transparent, var(--gold));
       }
       .hero-line::after { background: linear-gradient(to left, transparent, var(--gold)); }
@@ -296,8 +280,7 @@
       }
       .orn-divider::before, .orn-divider::after {
         content: "";
-        flex: 1;
-        height: 1px;
+        flex: 1; height: 1px;
         background: linear-gradient(to right, transparent, var(--gold) 40%, var(--gold) 60%, transparent);
       }
       .orn-divider span { color: var(--gold); font-size: 1.1rem; display: flex; align-items: center; gap: .8rem; }
@@ -366,6 +349,12 @@
         cursor: default;
       }
       .tag:hover { border-color: var(--gold); color: var(--gold); }
+      .tag.learning {
+        border-color: rgba(112,64,168,.3);
+        background: rgba(112,64,168,.05);
+        color: var(--purple-soft);
+      }
+      .tag.learning:hover { border-color: var(--purple-soft); color: var(--purple-soft); }
 
       /* ── FORMATION ── */
       #formation { padding: 0 0 5rem; }
@@ -408,11 +397,7 @@
         letter-spacing: .05em;
         margin-bottom: .3rem;
       }
-      .formation-sub {
-        font-size: .92rem;
-        color: var(--text-soft);
-        font-style: italic;
-      }
+      .formation-sub { font-size: .92rem; color: var(--text-soft); font-style: italic; }
 
       /* ── PROJECTS ── */
       #projects { padding: 4rem 0 7rem; }
@@ -559,7 +544,6 @@
         gap: .55rem;
       }
       .soc-btn:hover { color: var(--gold); border-color: var(--border); background: var(--gold-glow); }
-      .soc-btn svg { flex-shrink: 0; }
 
       /* ── FOOTER ── */
       footer {
@@ -606,25 +590,22 @@
         .container { padding: 0 1.5rem; }
         footer { padding: 1.5rem; }
       }
-
       @media (max-width: 580px) {
         .nav-links { display: none; }
         .nav-burger { display: flex; }
         .hero-cta { flex-direction: column; align-items: center; }
       }
-
       @media (prefers-reduced-motion: reduce) {
         * { animation-duration: .01ms !important; transition-duration: .01ms !important; }
       }
     </style>
   </head>
   <body>
-    <!-- Mobile nav overlay -->
     <div class="nav-mobile" id="nav-mobile" aria-hidden="true">
-      <a href="#about" class="nav-mobile-link">À Propos</a>
-      <a href="#formation" class="nav-mobile-link">Formation</a>
-      <a href="#projects" class="nav-mobile-link">Projets</a>
-      <a href="#contact" class="nav-mobile-link">Contact</a>
+      <a href="#about">À Propos</a>
+      <a href="#formation">Formation</a>
+      <a href="#projects">Projets</a>
+      <a href="#contact">Contact</a>
     </div>
 
     <nav>
@@ -636,9 +617,7 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
       <button class="nav-burger" id="nav-burger" aria-label="Ouvrir le menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
     </nav>
 
@@ -653,8 +632,6 @@
         <path d="M116,128 C108,120 112,110 124,114 C126,126 120,132 116,128Z" fill="none" stroke="#c9a96e" stroke-width=".9" opacity=".18"/>
         <circle cx="36" cy="36" r="2.5" fill="none" stroke="#c9a96e" stroke-width=".8" opacity=".11"/>
         <circle cx="66" cy="70" r="2.5" fill="none" stroke="#c9a96e" stroke-width=".8" opacity=".11"/>
-        <circle cx="102" cy="109" r="2" fill="none" stroke="#c9a96e" stroke-width=".8" opacity=".1"/>
-        <circle cx="144" cy="150" r="2" fill="none" stroke="#c9a96e" stroke-width=".8" opacity=".08"/>
       </svg>
       <svg class="corner corner-br" width="175" height="175" viewBox="0 0 175 175" fill="none" aria-hidden="true">
         <path d="M4,171 L4,4 L171,4" stroke="#c9a96e" stroke-width="1" fill="none" opacity=".18"/>
@@ -663,25 +640,21 @@
         <path d="M24,24 C18,16 26,8 36,12 C38,22 30,26 24,24Z" fill="none" stroke="#c9a96e" stroke-width=".9" opacity=".18"/>
         <path d="M50,56 C42,48 48,38 60,42 C64,54 56,60 50,56Z" fill="none" stroke="#c9a96e" stroke-width=".9" opacity=".18"/>
         <path d="M80,96 C70,88 76,76 88,80 C92,92 84,100 80,96Z" fill="none" stroke="#c9a96e" stroke-width=".9" opacity=".18"/>
-        <path d="M116,128 C108,120 112,110 124,114 C126,126 120,132 116,128Z" fill="none" stroke="#c9a96e" stroke-width=".9" opacity=".18"/>
         <circle cx="36" cy="36" r="2.5" fill="none" stroke="#c9a96e" stroke-width=".8" opacity=".11"/>
-        <circle cx="66" cy="70" r="2.5" fill="none" stroke="#c9a96e" stroke-width=".8" opacity=".11"/>
-        <circle cx="102" cy="109" r="2" fill="none" stroke="#c9a96e" stroke-width=".8" opacity=".1"/>
-        <circle cx="144" cy="150" r="2" fill="none" stroke="#c9a96e" stroke-width=".8" opacity=".08"/>
       </svg>
 
       <div class="hero-content">
-        <p class="hero-eyebrow">// AI Engineering · Étudiant L2 · 974</p>
+        <p class="hero-eyebrow">// AI Engineering · Étudiant L3 · 974</p>
         <h1 class="hero-name">Florian</h1>
         <p class="hero-subtitle">Ingénieur IA en devenir · Île de La Réunion</p>
         <div class="hero-line" aria-hidden="true"><span>❧</span></div>
         <p class="hero-desc">
-          Je construis des outils IA concrets, des APIs et des expériences web —
-          passionné par l'automatisation et les systèmes privacy-first.
+          Je construis des outils IA concrets, des automatisations et des
+          expériences web — passionné par les systèmes privacy-first et l'open-source.
         </p>
         <div class="hero-cta">
           <a href="#projects" class="btn"><span>Voir mes projets</span></a>
-          <a href="cv-marianne-florian.pdf" class="btn btn-ghost" download><span>Télécharger mon CV</span></a>
+          <a href="./cv-marianne-florian.pdf" class="btn btn-ghost" download><span>Télécharger mon CV</span></a>
           <a href="#contact" class="btn btn-ghost"><span>Me contacter</span></a>
         </div>
       </div>
@@ -698,65 +671,61 @@
         <div class="about-grid">
           <div class="about-text reveal">
             <p>
-              Étudiant en <em>Licence Informatique</em> à l'Université de La
+              Étudiant en <em>Licence Informatique (L3)</em> à l'Université de La
               Réunion, je me spécialise en <strong>intelligence artificielle</strong>
               et développement full-stack. Ma curiosité me pousse à toujours
-              construire : pipelines RAG, APIs, outils d'automatisation.
+              construire — agents IA, outils d'automatisation, interfaces web.
             </p>
             <p>
-              Mes projets naissent de <em>vraies frustrations</em> — comme
-              PrixRéunion, une app de comparaison de prix pensée pour les
-              habitants de l'île. Je crois à la <em>tech utile</em>, open-source
-              et respectueuse de la vie privée.
+              Mes projets naissent de <em>vraies frustrations</em> et d'une envie
+              de créer des choses utiles. Je crois à la tech <em>open-source</em>,
+              privacy-first, et qui tourne en local quand c'est possible.
             </p>
             <p>
-              Actuellement en recherche d'un <strong>stage en IA</strong> (été
-              2026). À l'aise dans des environnements rapides, j'apprends vite
-              et livre des choses qui fonctionnent.
+              Disponible pour un <strong>stage en IA / développement</strong> à partir
+              de l'été 2026. À l'aise à distance ou depuis La Réunion.
             </p>
           </div>
           <div class="reveal">
             <p class="stack-title">Stack Technique</p>
             <div class="stack-row">
-              <p class="stack-label">IA & Machine Learning</p>
+              <p class="stack-label">Langages</p>
               <div class="tags">
                 <span class="tag">Python</span>
-                <span class="tag">FastAPI</span>
-                <span class="tag">LangChain</span>
-                <span class="tag">Ollama</span>
-                <span class="tag">RAG</span>
-                <span class="tag">Mistral API</span>
-                <span class="tag">ChromaDB</span>
-              </div>
-            </div>
-            <div class="stack-row">
-              <p class="stack-label">Web & Frontend</p>
-              <div class="tags">
-                <span class="tag">React</span>
                 <span class="tag">JavaScript</span>
-                <span class="tag">Node.js</span>
+                <span class="tag">C</span>
+                <span class="tag">Java</span>
+                <span class="tag">OCaml</span>
+                <span class="tag">SQL</span>
                 <span class="tag">HTML/CSS</span>
-                <span class="tag">Tailwind</span>
-                <span class="tag">PHP</span>
               </div>
             </div>
             <div class="stack-row">
-              <p class="stack-label">Infra & Outils</p>
+              <p class="stack-label">IA & Automatisation</p>
               <div class="tags">
-                <span class="tag">Docker</span>
-                <span class="tag">PostgreSQL</span>
+                <span class="tag">Prompt Engineering</span>
+                <span class="tag">Ollama</span>
+                <span class="tag">LLM</span>
                 <span class="tag">n8n</span>
+              </div>
+            </div>
+            <div class="stack-row">
+              <p class="stack-label">Web & Outils</p>
+              <div class="tags">
+                <span class="tag">Tailwind CSS</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">PHP</span>
+                <span class="tag">Docker</span>
                 <span class="tag">Git</span>
                 <span class="tag">Linux</span>
               </div>
             </div>
             <div class="stack-row">
-              <p class="stack-label">Langages</p>
+              <p class="stack-label">En apprentissage</p>
               <div class="tags">
-                <span class="tag">Java</span>
-                <span class="tag">C</span>
-                <span class="tag">OCaml</span>
-                <span class="tag">Julia</span>
+                <span class="tag learning">FastAPI</span>
+                <span class="tag learning">React</span>
+                <span class="tag learning">PostgreSQL</span>
               </div>
             </div>
           </div>
@@ -775,13 +744,13 @@
         <div class="formation-grid">
           <div class="formation-card reveal">
             <p class="formation-year">2024 — 2027</p>
-            <p class="formation-title">Licence Informatique</p>
-            <p class="formation-sub">Université de La Réunion</p>
+            <p class="formation-title">Licence Informatique (L3)</p>
+            <p class="formation-sub">Université de La Réunion — Parcours IA</p>
           </div>
           <div class="formation-card reveal">
             <p class="formation-year">2024</p>
-            <p class="formation-title">Baccalauréat</p>
-            <p class="formation-sub">Spé Maths/Science de l'ingénieur - Lycée Trois-Bassins </p>
+            <p class="formation-title">Baccalauréat Général</p>
+            <p class="formation-sub">Lycée de Trois-Bassins · Maths & Sciences de l'Ingénieur</p>
           </div>
         </div>
       </div>
@@ -797,57 +766,37 @@
         </div>
         <div class="proj-grid">
 
-          <!-- PrixRéunion (featured) -->
+          <!-- KSOS featured -->
           <div class="proj-card proj-featured reveal">
             <div class="proj-featured-inner">
               <div class="proj-visual" aria-hidden="true">
-                <svg width="108" height="108" viewBox="0 0 108 108" fill="none" aria-hidden="true">
+                <svg width="108" height="108" viewBox="0 0 108 108" fill="none">
                   <circle cx="54" cy="54" r="40" stroke="rgba(201,169,110,.14)" stroke-width="1"/>
                   <circle cx="54" cy="54" r="26" stroke="rgba(112,64,168,.22)" stroke-width="1" stroke-dasharray="3 2"/>
-                  <rect x="22" y="68" width="8" height="20" fill="rgba(201,169,110,.22)" stroke="rgba(201,169,110,.45)" stroke-width=".5"/>
-                  <rect x="35" y="54" width="8" height="34" fill="rgba(201,169,110,.32)" stroke="rgba(201,169,110,.55)" stroke-width=".5"/>
-                  <rect x="48" y="43" width="8" height="45" fill="rgba(201,169,110,.48)" stroke="#c9a96e" stroke-width=".5"/>
-                  <rect x="61" y="57" width="8" height="31" fill="rgba(201,169,110,.28)" stroke="rgba(201,169,110,.48)" stroke-width=".5"/>
-                  <rect x="74" y="70" width="8" height="18" fill="rgba(201,169,110,.18)" stroke="rgba(201,169,110,.38)" stroke-width=".5"/>
-                  <path d="M26,72 L39,57 L52,46 L65,60 L78,72" stroke="#c9a96e" stroke-width="1" fill="none" stroke-dasharray="2 1.5"/>
-                  <text x="54" y="27" text-anchor="middle" fill="#c9a96e" font-family="JetBrains Mono,monospace" font-size="6.5" opacity=".55" letter-spacing="1">PRIX.RE</text>
+                  <rect x="26" y="36" width="22" height="14" rx="2" fill="none" stroke="rgba(201,169,110,.5)" stroke-width=".8"/>
+                  <rect x="60" y="36" width="22" height="14" rx="2" fill="none" stroke="rgba(201,169,110,.5)" stroke-width=".8"/>
+                  <rect x="26" y="58" width="22" height="14" rx="2" fill="none" stroke="rgba(201,169,110,.35)" stroke-width=".8"/>
+                  <rect x="60" y="58" width="22" height="14" rx="2" fill="none" stroke="rgba(201,169,110,.35)" stroke-width=".8"/>
+                  <text x="54" y="27" text-anchor="middle" fill="#c9a96e" font-family="JetBrains Mono,monospace" font-size="7" opacity=".55" letter-spacing="1">KSOS</text>
                 </svg>
               </div>
               <div>
-                <p class="proj-badge">Projet Principal · 2025</p>
-                <h3 class="proj-name lg">PrixRéunion</h3>
+                <p class="proj-badge">Projet Principal · 2024–2025</p>
+                <h3 class="proj-name lg">KSOS</h3>
                 <p class="proj-desc">
-                  Comparateur de prix pour les habitants de La Réunion.
-                  Scraping automatisé, API REST FastAPI, interface React,
-                  base PostgreSQL. Un outil pensé pour un vrai problème local.
+                  Portail collaboratif regroupant les jeux et projets de quatre développeurs.
+                  Filtre global unifié, thèmes visuels multiples, splash screen animé,
+                  favoris persistants et intégration GitHub API en temps réel.
                 </p>
                 <div class="proj-tags">
-                  <span class="ptag">FastAPI</span>
-                  <span class="ptag">React</span>
-                  <span class="ptag">PostgreSQL</span>
-                  <span class="ptag">Python</span>
-                  <span class="ptag">Docker</span>
+                  <span class="ptag">Vanilla JS</span>
+                  <span class="ptag">Tailwind CSS</span>
+                  <span class="ptag">GitHub API</span>
+                  <span class="ptag">Service Worker</span>
                 </div>
-                <a href="https://github.com/florianm974/prixreunion" class="proj-link" target="_blank" rel="noopener noreferrer">Voir sur GitHub →</a>
+                <a href="https://florianm974.github.io/KSOS/" class="proj-link" target="_blank" rel="noopener noreferrer">Voir le site →</a>
               </div>
             </div>
-          </div>
-
-          <!-- KSOS -->
-          <div class="proj-card reveal">
-            <p class="proj-badge">Collectif · 2024–2025</p>
-            <h3 class="proj-name">KSOS</h3>
-            <p class="proj-desc">
-              Portail collaboratif regroupant les jeux et projets de 4 développeurs.
-              Filtre global unifié, thèmes visuels multiples, splash screen animé,
-              favoris persistants et intégration GitHub API.
-            </p>
-            <div class="proj-tags">
-              <span class="ptag">Vanilla JS</span>
-              <span class="ptag">Tailwind CSS</span>
-              <span class="ptag">GitHub API</span>
-            </div>
-            <a href="https://florianm974.github.io/KSOS/" class="proj-link" target="_blank" rel="noopener noreferrer">Voir le site →</a>
           </div>
 
           <!-- Prompt Forge -->
@@ -855,8 +804,8 @@
             <p class="proj-badge">Outil IA · 2024–2025</p>
             <h3 class="proj-name">Prompt Forge</h3>
             <p class="proj-desc">
-              Builder de prompts IA en vanilla JavaScript. Modes chatbot et
-              génération d'images, templates prêts à l'emploi, historique local,
+              Builder de prompts IA en JavaScript vanilla, sans dépendances.
+              Modes chatbot et génération d'images, templates par cas d'usage,
               export et partage par URL.
             </p>
             <div class="proj-tags">
@@ -867,13 +816,30 @@
             <a href="https://florianm974.github.io/prompt-forge/" class="proj-link" target="_blank" rel="noopener noreferrer">Voir le site →</a>
           </div>
 
+          <!-- Agent veille IA -->
+          <div class="proj-card reveal">
+            <p class="proj-badge">Automatisation · 2026</p>
+            <h3 class="proj-name">Agent de veille IA</h3>
+            <p class="proj-desc">
+              Pipeline de veille technologique quotidienne entièrement local.
+              Collecte RSS, résumé LLM via Ollama, diffusion automatique sur Discord.
+              Orchestré avec n8n et Docker.
+            </p>
+            <div class="proj-tags">
+              <span class="ptag">n8n</span>
+              <span class="ptag">Docker</span>
+              <span class="ptag">Ollama</span>
+              <span class="ptag">Prompt Engineering</span>
+            </div>
+          </div>
+
           <!-- florian-links -->
           <div class="proj-card reveal">
             <p class="proj-badge">Design · 2024</p>
             <h3 class="proj-name">Florian Links</h3>
             <p class="proj-desc">
               Linktree personnel avec une esthétique dark floral-gothic.
-              Zéro dépendance, pétales animées, thème clair/sombre —
+              Zéro dépendance, animations CSS, thème clair/sombre —
               alternatif privacy-first aux plateformes tierces.
             </p>
             <div class="proj-tags">
@@ -898,24 +864,24 @@
         </div>
         <div class="contact-wrap reveal">
           <p class="contact-q">
-            Disponible pour un <em>stage en IA</em> dès l'été 2026.<br />
+            Disponible pour un <em>stage en IA</em> à partir de l'été 2026.<br />
             Ouvert à toute collaboration intéressante, en remote ou depuis La Réunion.
           </p>
           <a href="mailto:flo.marianne31@proton.me" class="btn"><span>Envoyer un message</span></a>
           <div class="social-row">
-            <a href="https://github.com/florianm974" class="soc-btn" target="_blank" rel="noopener noreferrer" aria-label="Profil GitHub">
+            <a href="https://github.com/florianm974" class="soc-btn" target="_blank" rel="noopener noreferrer">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
               </svg>
               GitHub
             </a>
-            <a href="https://linkedin.com/in/florian-marianne" class="soc-btn" target="_blank" rel="noopener noreferrer" aria-label="Profil LinkedIn">
+            <a href="https://linkedin.com/in/florian-marianne" class="soc-btn" target="_blank" rel="noopener noreferrer">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
               </svg>
               LinkedIn
             </a>
-            <a href="https://florianm974.github.io/florian-links/" class="soc-btn" target="_blank" rel="noopener noreferrer" aria-label="Page de liens">
+            <a href="https://florianm974.github.io/florian-links/" class="soc-btn" target="_blank" rel="noopener noreferrer">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
                 <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
@@ -934,7 +900,6 @@
     </footer>
 
     <script>
-      // ── Reveal on scroll (stagger global, pas par batch) ──
       let revealCounter = 0;
       const reveals = document.querySelectorAll(".reveal");
       const io = new IntersectionObserver(
@@ -952,7 +917,6 @@
       );
       reveals.forEach((el) => io.observe(el));
 
-      // ── Active nav on scroll ──
       const sections = document.querySelectorAll("section[id]");
       const navLinks = document.querySelectorAll(".nav-links a");
       window.addEventListener("scroll", () => {
@@ -965,11 +929,8 @@
         });
       }, { passive: true });
 
-      // ── Burger menu ──
       const burger = document.getElementById("nav-burger");
       const mobileNav = document.getElementById("nav-mobile");
-      const mobileLinks = mobileNav.querySelectorAll("a");
-
       function toggleMenu(open) {
         burger.classList.toggle("open", open);
         burger.setAttribute("aria-expanded", String(open));
@@ -977,20 +938,10 @@
         mobileNav.setAttribute("aria-hidden", String(!open));
         document.body.style.overflow = open ? "hidden" : "";
       }
-
-      burger.addEventListener("click", () => {
-        toggleMenu(!burger.classList.contains("open"));
-      });
-
-      mobileLinks.forEach((link) => {
-        link.addEventListener("click", () => toggleMenu(false));
-      });
-
+      burger.addEventListener("click", () => toggleMenu(!burger.classList.contains("open")));
+      mobileNav.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => toggleMenu(false)));
       document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape" && mobileNav.classList.contains("open")) {
-          toggleMenu(false);
-          burger.focus();
-        }
+        if (e.key === "Escape" && mobileNav.classList.contains("open")) { toggleMenu(false); burger.focus(); }
       });
     </script>
   </body>
