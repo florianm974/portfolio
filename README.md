@@ -8,7 +8,7 @@ Portfolio personnel présentant mon profil, ma stack, ma formation et mes projet
 
 ## Présentation
 
-> Single page dark-theme, tons or/violet. Pas de framework, pas de build.
+> Single page dark-theme, tons noir/rouge. Pas de framework, pas de build.
 
 ---
 
@@ -27,6 +27,7 @@ Portfolio personnel présentant mon profil, ma stack, ma formation et mes projet
 portfolio/
 ├── index.html                 # Portfolio complet (HTML, CSS, JS inlinés)
 ├── 404.html                   # Page 404 personnalisée
+├── assets/                    # Visuels (hero.jpg optionnel — voir assets/README.md)
 ├── manifest.json              # Manifest PWA
 ├── og.png                     # Image Open Graph (partage réseaux)
 └── LICENSE
